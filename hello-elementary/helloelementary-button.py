@@ -17,17 +17,13 @@ def hello_elementary():
     #Set some text for our button
     button.text = "Goodbye Elementary"
 
-    #callback_pressed_add tells our button a callback to run when our button is pressed
-    #the first argument is the function run and the following arguments are things to pass
-    #to the callback
+    #callback_pressed_add tells our button a callback to run when our button is pressed, the first argument is the function run and the following arguments are things to pass to the callback
     button.callback_pressed_add(button_pressed, "argument1", "argument2")
 
     #Show our button
     button.show()
 
-    #Since we now have multiple objects we want to display on our window
-    #we need to tell our window how to position these objects an elementary
-    #box is an object that you can "pack" items into and then add to our window
+    #Since we now have multiple objects we want to display on our window, we need to tell our window how to position these objects an elementary, box is an object that you can "pack" items into and then add to our window
 
     #Create a box
     box = elementary.Box(window)
@@ -50,9 +46,7 @@ def hello_elementary():
 
     window.show()
 
-#Our callback when the button is pressed
-#The first argument for this function will be the elementary button object
-#The rest of the arguments are the custom things we passed above
+#Our callback when the button is pressed. The first argument for this function will be the elementary button object. The rest of the arguments are the custom things we passed above
 def button_pressed(button, arg1, arg2):
     #Show the content of our arguments in terminal
     print arg1, arg2

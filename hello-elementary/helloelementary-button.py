@@ -23,7 +23,7 @@ def hello_elementary():
     #Show our button
     button.show()
 
-    #Since we now have multiple objects we want to display on our window, we need to tell our window how to position these objects an elementary, box is an object that you can "pack" items into and then add to our window
+    #Since we now have multiple objects we want to display on our window, we can position these objects using an elementary box which is a container object that you can "pack" items into.
 
     #Create a box
     box = elementary.Box(window)
@@ -31,7 +31,7 @@ def hello_elementary():
     #Tell our box to fill all open space in our window
     box.size_hint_weight_set(evas.EVAS_HINT_EXPAND, evas.EVAS_HINT_EXPAND)
     box.size_hint_align_set(evas.EVAS_HINT_FILL, evas.EVAS_HINT_FILL)
-    
+
     #Show our box
     box.show()
 
@@ -39,7 +39,7 @@ def hello_elementary():
     box.pack_end(windytax)
     box.pack_end(button)
 
-    #This time lets add our box to the window instead of just our label
+    #This time lets use our box instead of just our label
     window.resize_object_add(box)
 
     window.resize(300,300)

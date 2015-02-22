@@ -1,8 +1,8 @@
 import efl.elementary as elm
 from efl.elementary.window import StandardWindow
 from efl.elementary.label import Label
-from efl.evas import EVAS_HINT_EXPAND
 
+from efl.evas import EVAS_HINT_EXPAND
 EXPAND_BOTH = EVAS_HINT_EXPAND, EVAS_HINT_EXPAND
 
 class MainWindow(StandardWindow):

@@ -1,6 +1,5 @@
 import efl.elementary as elm
 from efl.elementary.window import StandardWindow
-from efl.elementary.label import Label
 from efl.elementary.button import Button
 from efl.elementary.box import Box
 

@@ -4,7 +4,7 @@ A series of Elementary Python tutorials.
 
 Tutorials:
 - 1.) [Hello Elementary](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-1-hello-elementary-65743)
-- 2.) [Weight Hints]() - TODO
+- 2.) [Weight Hints](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-2-weight-hints-65905)
 - 3.) [Align Hints]() - TODO
 - 4.) [Images / Fileselector]() - TODO
 - 5.) [Naviframe]() - TODO

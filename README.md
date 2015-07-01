@@ -7,7 +7,7 @@ Tutorials:
 - 2.) [Weight Hints](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-2-weight-hints-65905)
 - 3.) [Align Hints](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-3-align-hints-66348)
 - 4.) [Images / FileselectorButton](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-4-displaying-images-66459)
-- 5.) [Naviframe]() - TODO
+- 5.) [Naviframe](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-5-naviframe-68138)
 - 6.) [Elm Extensions]() - TODO
 - 7.) [List and Genlist]() - TODO
 

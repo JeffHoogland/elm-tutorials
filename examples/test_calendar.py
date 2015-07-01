@@ -184,10 +184,10 @@ def test_calendar2(obj):
     cal3 = elm_calendar_add(win)
     evas_object_size_hint_weight_set(cal3, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND)
     evas_object_size_hint_align_set(cal3, EVAS_HINT_FILL, EVAS_HINT_FILL)
-    current_time = time(NULL) + 34 * 84600
+    current_time = time(NULL) + 34 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_selected_time_set(cal3, &selected_time)
-    current_time = time(NULL) + 1 * 84600
+    current_time = time(NULL) + 1 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_mark_add(cal3, "checked", &selected_time, ELM_CALENDAR_UNIQUE)
     elm_calendar_marks_clear(cal3)
@@ -215,24 +215,24 @@ def test_calendar2(obj):
     elm_calendar_format_function_set(cal, _format_month_year)
     elm_calendar_min_max_year_set(cal, 2010, 2020)
 
-    current_time = time(NULL) + 4 * 84600
+    current_time = time(NULL) + 4 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_mark_add(cal, "holiday", &selected_time, ELM_CALENDAR_ANNUALLY)
 
-    current_time = time(NULL) + 1 * 84600
+    current_time = time(NULL) + 1 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_mark_add(cal, "checked", &selected_time, ELM_CALENDAR_UNIQUE)
 
-    current_time = time(NULL) - 363 * 84600
+    current_time = time(NULL) - 363 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_mark_add(cal, "checked", &selected_time, ELM_CALENDAR_MONTHLY)
 
-    current_time = time(NULL) - 5 * 84600
+    current_time = time(NULL) - 5 * 86400
     localtime_r(&current_time, &selected_time)
     mark = elm_calendar_mark_add(cal, "holiday", &selected_time,
                       ELM_CALENDAR_WEEKLY)
 
-    current_time = time(NULL) + 1 * 84600
+    current_time = time(NULL) + 1 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_mark_add(cal, "holiday", &selected_time, ELM_CALENDAR_WEEKLY)
 
@@ -258,7 +258,7 @@ def test_calendar3(obj):
     cal = elm_calendar_add(win)
     elm_calendar_first_day_of_week_set(cal, ELM_DAY_THURSDAY)
     elm_calendar_select_mode_set(cal, ELM_CALENDAR_SELECT_MODE_ONDEMAND)
-    current_time = time(NULL) + 34 * 84600
+    current_time = time(NULL) + 34 * 86400
     localtime_r(&current_time, &selected_time)
     elm_calendar_selected_time_set(cal, &selected_time)
     evas_object_size_hint_weight_set(cal, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND)

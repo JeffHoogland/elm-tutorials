@@ -27,8 +27,9 @@ class MainWindow(StandardWindow):
         ourLabel.text = "Hey look some text!"
         ourLabel.show()
         
-        self.nf = Naviframe(self, size_hint_weight=EXPAND_BOTH,
-                               size_hint_align=FILL_BOTH)
+        self.nf = Naviframe(self)
+        self.nf.size_hint_weight = EXPAND_BOTH
+        self.nf.size_hint_align = FILL_BOTH
         self.nf.show()
         
         buttonOne = Button(self)

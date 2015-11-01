@@ -18,7 +18,7 @@ class MainWindow(StandardWindow):
         StandardWindow.__init__(self, "ex8", "ElmEx - Button and Popup", size=(300, 200))
         self.callback_delete_request_add(lambda o: elm.exit())
 
-        ourButton = StandardButton(self, "Show Popup", "start-here", self.buttonPressed, size_hint_weight = EXPAND_HORIZ)
+        ourButton = StandardButton(self, "Show Popup", "start-here", self.buttonPressed)
         ourButton.size_hint_weight = EXPAND_HORIZ
         ourButton.size_hint_align = FILL_BOTH
         ourButton.show()
@@ -27,8 +27,6 @@ class MainWindow(StandardWindow):
         ourButton2.size_hint_weight = EXPAND_HORIZ
         ourButton2.size_hint_align = FILL_BOTH
         ourButton2.show()
-        
-        self.ourPopup = StandardPopup(self, "Press OK to close this message.", "ok")
         
         mainBox = Box(self)
         mainBox.size_hint_weight = EXPAND_BOTH
@@ -40,7 +38,8 @@ class MainWindow(StandardWindow):
         self.resize_object_add(mainBox)
         
     def buttonPressed(self, btn):
-        self.ourPopup.show()
+        ourPopup = StandardPopup(self, "Press OK to close this message.", "ok")
+        ourPopup.show()
     
     def button2Pressed(self, btn):
         AboutWindow(self, title="About Window", standardicon="dialog-information", \

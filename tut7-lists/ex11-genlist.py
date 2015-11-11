@@ -25,20 +25,19 @@ class MainWindow(StandardWindow):
         
         ourList = Genlist(self)
         ourList.size_hint_weight = EXPAND_BOTH
+        ourList.callback_selected_add(self.listItemSelected)
         
         ListItems.sort()
         
         for it in ListItems:
-            li = GenlistItem(item_data={"itemName":it}, item_class=GLIC(), func=self.listItemSelected)
+            li = GenlistItem(item_data={"itemName":it}, item_class=GLIC())
             li.append_to(ourList)
         
         ourList.show()
         
         self.resize_object_add(ourList)
     
-    def listItemSelected(self, ourItem, ourList, extraData):
-        print ourItem.data
-        print extraData
+    def listItemSelected(self, ourList, ourItem):
         ourPopup = StandardPopup(self, "You selected %s"%ourItem.data["itemName"], "ok")
         ourPopup.show()
 

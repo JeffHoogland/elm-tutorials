@@ -9,7 +9,7 @@ Tutorials:
 - 4.) [Images / FileselectorButton](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-4-displaying-images-66459)
 - 5.) [Naviframe](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-5-naviframe-68138)
 - 6.) [Elm Extensions](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-6-elmextensions-70278)
-- 7.) [Lists]() - TODO
+- 7.) [Lists](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-7-lists-70387)
 
 Credits: 
 - [Jeff Hoogland](http://www.jeffhoogland.com/)

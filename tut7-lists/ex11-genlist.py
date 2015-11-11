@@ -25,7 +25,7 @@ class MainWindow(StandardWindow):
         
         ourList = Genlist(self)
         ourList.size_hint_weight = EXPAND_BOTH
-        ourList.callback_selected_add(self.listItemSelected)
+        ourList.callback_activated_add(self.listItemSelected)
         
         ListItems.sort()
         

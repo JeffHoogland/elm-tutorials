@@ -23,8 +23,6 @@ class MainWindow(StandardWindow):
         StandardWindow.__init__(self, "ex11", "Genlist List", size=(300, 200))
         self.callback_delete_request_add(lambda o: elm.exit())
         
-        self.lastSelected = None
-        
         ourList = Genlist(self)
         ourList.size_hint_weight = EXPAND_BOTH
         
@@ -39,10 +37,10 @@ class MainWindow(StandardWindow):
         self.resize_object_add(ourList)
     
     def listItemSelected(self, ourItem, ourList, extraData):
-        if self.lastSelected != ourItem.text:
-            self.lastSelected = ourItem.text
-            ourPopup = StandardPopup(self, "You selected %s"%ourItem.data["itemName"], "ok")
-            ourPopup.show()
+        print ourItem.data
+        print extraData
+        ourPopup = StandardPopup(self, "You selected %s"%ourItem.data["itemName"], "ok")
+        ourPopup.show()
 
 if __name__ == "__main__":
     elm.init()

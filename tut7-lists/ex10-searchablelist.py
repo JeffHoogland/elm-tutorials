@@ -16,26 +16,22 @@ class MainWindow(StandardWindow):
         StandardWindow.__init__(self, "ex10", "Searchable List", size=(300, 200))
         self.callback_delete_request_add(lambda o: elm.exit())
 
-        self.lastSelected = None
-
-        ourList = SearchableList(self)
-        ourList.size_hint_weight = EXPAND_BOTH
-        ourList.callback_item_focused_add(self.listItemSelected)
+        searchList = SearchableList(self)
+        searchList.size_hint_weight = EXPAND_BOTH
+        searchList.ourList.callback_activated_add(self.listItemSelected)
         
         ListItems.sort()
         
         for it in ListItems:
-            ourList.item_append(it)
+            searchList.item_append(it)
         
-        ourList.show()
+        searchList.show()
         
-        self.resize_object_add(ourList)
+        self.resize_object_add(searchList)
     
     def listItemSelected(self, ourList, ourItem):
-        if self.lastSelected != ourItem.text:
-            self.lastSelected = ourItem.text
-            ourPopup = StandardPopup(self, "You selected %s"%ourItem.text, "ok")
-            ourPopup.show()
+        ourPopup = StandardPopup(self, "You selected %s"%ourItem.text, "ok")
+        ourPopup.show()
 
 if __name__ == "__main__":
     elm.init()

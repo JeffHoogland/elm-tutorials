@@ -11,7 +11,7 @@ Tutorials:
 - 6.) [Elm Extensions](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-6-elmextensions-70278)
 - 7.) [Lists](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-7-lists-70387)
 - 8.) [Genlist](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-8-genlist-70590)
-- 9.) [Custom Widgets]
+- 9.) [Custom Widgets](http://it.toolbox.com/blogs/enlightenment/pyefl-tutorial-9-custom-elementary-widgets-71246)
 - 10.) [Desktop Integration]
 - 11.) [Layout Widgets] 
 
